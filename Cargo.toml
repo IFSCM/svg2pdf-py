@@ -1,0 +1,17 @@
+[package]
+name = "svg2pdf_py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "svg2pdf_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.21", features = ["extension-module", "abi3", "abi3-py39"] }
+svg2pdf = { version = "0.13", features = ["text", "image", "filters"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

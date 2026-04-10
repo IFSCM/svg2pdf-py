@@ -1,0 +1,28 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "svg2pdf-py"
+version = "0.1.0"
+description = "Fast SVG to vector PDF conversion via typst/svg2pdf"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+readme = "README.md"
+authors = [{ name = "IFSCM" }]
+keywords = ["svg", "pdf", "conversion", "typst", "usvg"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+]
+
+[project.urls]
+Homepage = "https://github.com/IFSCM/svg2pdf-py"
+Repository = "https://github.com/IFSCM/svg2pdf-py"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "svg2pdf_py"
+bindings = "pyo3"
+python-packages = ["svg2pdf_py"]
