@@ -12,6 +12,6 @@ pyo3 = { version = "0.21", features = ["extension-module", "abi3", "abi3-py39"] 
 svg2pdf = { version = "0.13", features = ["text", "image", "filters"] }
 
 [profile.release]
-lto = true
-codegen-units = 1
-opt-level = 3
+lto = false
+codegen-units = 4
+opt-level = 2
