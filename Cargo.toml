@@ -8,7 +8,7 @@ name = "svg2pdf_py"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.21", features = ["extension-module", "abi3", "abi3-py39"] }
+pyo3 = { version = "0.22", features = ["extension-module", "abi3", "abi3-py311"] }
 svg2pdf = { version = "0.13", features = ["text", "image", "filters"] }
 
 [profile.release]
