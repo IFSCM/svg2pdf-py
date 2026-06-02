@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "svg2pdf-py"
-version = "0.1.0"
+version = "1.1.0"
 description = "Fast SVG to vector PDF conversion via typst/svg2pdf"
 requires-python = ">=3.9"
 license = { text = "MIT" }
